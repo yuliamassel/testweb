@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+.cart{
+  width: 750px;
+  height: auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display{
+  display: flex;
+  flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.txt-selected{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #0d253c; 
+  margin-bottom: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.selected{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 2rem;
+}
+
+.icon-del{
+  color: #aaa;
+}
+
+.icon-love{
+  color: #aaa;
+}
+
+.active:hover{
+  color: red;
+}
+
+.img-stuf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECF0F1;
+  width: 130px;
+  height: 180px;
+  border-radius: 7px;
+}
+
+.desc-stuf{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+
+.qt{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 45px;
+  height: auto;
+  background-color: #ECF0F1;
+  border: 1px solid #d6d6d6;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-temp{
+  border: none;
+  outline: none;
+  border: 1px solid #d6d6d6;
+  width: 45px;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.payment{
+  width: 350px;
+  height: 300px;
+  /* padding: 1rem; */
+  background-color: #ffffff;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.Btn-check{
+  background: #3498DB ;
+  color: #ffffff;
+  font-weight: 500;
+  width: 300px;
+  height: 37px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.Btn-check:hover{
+  background: #ECF0F1 ;
+  color: #0d253c;
+}
+
+.discount{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  height: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.05);
+  margin-left: 3rem;
+}
+
+.txt-discount{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  color: #0d253c; 
+}
+
+@media screen and (max-width: 768px){
+
+  .cart{
+    width: 500px;
+    /* padding-right: -5rem; */
   }
-  to {
-    transform: rotate(360deg);
+
+  .display{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
+
 }
